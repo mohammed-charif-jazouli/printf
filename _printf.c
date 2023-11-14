@@ -12,8 +12,7 @@ int _printf(const char *format, ...)
 	va_list args;
 
 	va_start(args, format);
-	do
-	{
+	do {
 		if (*format != '%')
 		{
 			_putchar(*format);
