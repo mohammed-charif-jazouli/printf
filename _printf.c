@@ -26,11 +26,11 @@ int _printf(const char *format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				_print_char(args);
+				len += _print_char(args);
 				i++;
 				break;
 			case 's':
-				_print_string(args);
+				len += _print_string(args);
 				i++;
 				break;
 			default:

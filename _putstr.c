@@ -2,7 +2,11 @@
 
 int _putstr(char *s)
 {
+	int len = 0;
 	while (*s)
+	{
+		len++;
 		_putchar(*s++);
-	return (0);
+	}
+	return (len);
 }
