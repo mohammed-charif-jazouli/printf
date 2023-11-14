@@ -25,12 +25,12 @@ int _printf(const char *format, ...)
 		i++;
 		switch (format[i])
 		{
-			case 'c':
-				len += _print_char(args);
-				i++;
-				break;
 			case 's':
 				len += _print_string(args);
+				i++;
+				break;
+			case 'c':
+				len += _print_char(args);
 				i++;
 				break;
 			default:
