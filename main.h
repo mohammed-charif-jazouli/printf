@@ -13,8 +13,8 @@ int _putchar(char c);
 int _putstr(char *s);
 
 /* format functions */
-int _print_char(va_list args);
-int _print_string(va_list args);
-int _print_int(va_list args);
+int print_char(va_list args);
+int print_string(va_list args);
+int print_int(va_list args);
 
 #endif

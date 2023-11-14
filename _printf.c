@@ -23,16 +23,16 @@ int _printf(const char *format, ...)
 		switch (*++format)
 		{
 			case 's':
-				len += _print_string(args);
+				len += print_string(args);
 				break;
 			case 'c':
-				len += _print_char(args);
+				len += print_char(args);
 				break;
 			case 'd':
-				len += _print_int(args);
+				len += print_int(args);
 				break;
 			case 'i':
-				len += _print_int(args);
+				len += print_int(args);
 				break;
 			default:
 				break;
