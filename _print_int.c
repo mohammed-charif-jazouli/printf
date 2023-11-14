@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _print_string - format int
+* _print_int - format int
 * @args: int to format
 *
 * Return: length of int
@@ -10,9 +10,8 @@ int _print_int(va_list args)
 {
 	int len = 0;
 	char *num = va_arg(args, char *);
-	
-	do
-	{
+
+	do {
 		if (*num >= '0' || *num <= '9')
 		{
 			len++;
