@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* _putchar - custom printf function
-* @c: string to print
+* _putchar - print character
+* @c: character to print
 *
-* Return: len
+* Return: success - 0
 */
 int _putchar(char c)
 {

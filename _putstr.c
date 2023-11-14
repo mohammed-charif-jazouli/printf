@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* _putstr - custom printf function
+* _putstr - print string
 * @s: string to print
 *
-* Return: len
+* Return: length of string
 */
 int _putstr(char *s)
 {

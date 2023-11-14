@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* _print_char - custom printf function
-* @args: string to print
+* _print_char - format character
+* @args: character to format
 *
-* Return: len
+* Return: succes - 1
 */
 int _print_char(va_list args)
 {

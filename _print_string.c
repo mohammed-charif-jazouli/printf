@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* _print_string - custom printf function
-* @args: string to print
+* _print_string - format string
+* @args: string to format
 *
-* Return: len
+* Return: length of string
 */
 int _print_string(va_list args)
 {

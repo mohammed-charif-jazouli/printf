@@ -4,7 +4,7 @@
 * _printf - custom printf function
 * @format: string to print
 *
-* Return: len
+* Return: the number of characters printed
 */
 int _printf(const char *format, ...)
 {
@@ -33,12 +33,20 @@ int _printf(const char *format, ...)
 				len += _print_char(args);
 				i++;
 				break;
+			case 'd':
+				len += _print_int(args);
+				i++;
+				break;
+			case 'i':
+				len += _print_int(args);
+				i++;
+				break;
 			default:
 				break;
 		}
 	}
 
-	printf("%i\n", len);
+	printf(" : %i\n", len);
 	va_end(args);
 	return (len);
 }
