@@ -10,9 +10,8 @@ int print_int(va_list args)
 {
 	int len = 0, num;
 	char *str;
-	
+
 	num = va_arg(args, int);
-	printf("%i", num);
 	while (num > 0)
 	{
 		printf("%c", '0' + (num % 10));
