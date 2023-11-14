@@ -45,8 +45,7 @@ int _printf(const char *format, ...)
 				break;
 		}
 	}
-
-	printf(" : %i\n", len);
+	
 	va_end(args);
 	return (len);
 }
