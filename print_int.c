@@ -9,16 +9,19 @@
 int print_int(va_list args)
 {
 	int len = 0, num;
-	char *str;
 
 	num = va_arg(args, int);
-	while (num > 0)
+	if (num < 0)
 	{
-		printf("%c", '0' + (num % 10));
-		*str++ = '0' + (num % 10);
+		len += _putchar('-');
+		num *= -1;
 	}
 
-	len += _putstr(str);
+	do {
+		len += _putchar('0' + (num % 10));
+		num -= num % 10;
+		num /= 10;
+	} while (num > 1);
 
 	return (len);
 }
